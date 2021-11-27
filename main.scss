@@ -53,7 +53,7 @@ main {
 	padding: 10px 0;
 	background: #222;
 	text-align: center;
-	color: aqua;
+	color: lawngreen;
 	height: 100%;
 	overflow: auto;
 	text-transform: uppercase;
@@ -74,14 +74,14 @@ main {
 h1 { margin: 0; }
 
 img {
-	width: 80%;
+	width: 6%;
 	height: auto;
 }
 
 table, td {
 	margin: 20px auto;
-	border: outset 1px limegreen;
-	color: hotpink;
+	border: outset 1px lawngreen;
+	color: red;
 	padding: 2px;
 }
 td {
@@ -89,7 +89,7 @@ td {
 }
 
 a {
-	color: hotpink;
+	color: red;
 }
 
 #drag-handle {
