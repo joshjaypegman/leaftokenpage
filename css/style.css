@@ -1121,3 +1121,84 @@ a:focus {
     color: #FF6F61;
     background: #222222;
 }
+
+
+.swap {
+    position: relative;
+    background: #ffffff;
+}
+
+.swap .content-inner {
+    padding: 100px 30px;
+    background: url(../img/swap.png) right bottom no-repeat;
+    background-size: contain;
+}
+
+.swap p {
+    color: #FF6F61;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.swap h1 {
+    color: #222222;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.swap h2 {
+    display: inline-block;
+    margin: 0;
+    height: 25px;
+    font-size: 25px;
+}
+
+.swap .typed-text {
+    display: none;
+}
+
+.swap .typed-cursor {
+    font-size: 25px;
+    font-weight: 300;
+    color: #222222;
+}
+
+.large-btn .content-inner {
+    font-size: 0;
+    border-bottom: 30px solid #F6D155;
+}
+
+.swap .large-btn .btn {
+    position: relative;
+    width: 50%;
+    padding: 15px 0;
+    color: #FF6F61;
+    font-size: 20px;
+    background: #222222;
+    border-radius: 0;
+}
+
+.swap .large-btn .btn:last-child {
+    color: #222222;
+    background: #222222;
+}
+
+.large-btn .btn i {
+    margin-right: 8px;
+}
+
+.large-btn .btn::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all .3s;
+}
+
+.large-btn .btn:hover::after {
+    width: 100%;
+    background: rgba(255, 255, 255, .1);
+}
