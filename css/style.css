@@ -1232,4 +1232,4 @@ a:focus {
     margin-bottom: 5px;
 }
 
-#egggif {background-image: url(riddle.png); }
+#egggif {background-image: url('riddle.png'); }
