@@ -30,7 +30,19 @@
         <link href="css/style.css" rel="stylesheet">
 
     </head>
-
+var egg = new Egg();
+egg
+  .addCode("up,up,down,down,left,right,left,right,b,a", function() {
+    jQuery('#egggif').fadeIn(500, function() {
+      window.setTimeout(function() { jQuery('#egggif').hide(); }, 5000);
+    }, "konami-code");
+  })
+  .addHook(function(){
+    console.log("Hook called for: " + this.activeEgg.keys);
+    console.log(this.activeEgg.metadata);
+  })
+  .listen();
+	
     <body data-spy="scroll" data-target=".navbar" data-offset="51">
         <div class="wrapper">
             <div class="sidebar">
@@ -612,6 +624,8 @@
         <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/isotope/isotope.pkgd.min.js"></script>
         <script src="lib/lightbox/js/lightbox.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/egg.js/1.0/egg.min.js"></script>
+
         
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
