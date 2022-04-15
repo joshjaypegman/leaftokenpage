@@ -1,21 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-       <script>
-
-    var egg = new Egg();
-    egg.addCode("up,up,down,down,left,right,left,right,b,a", function() {
-      jQuery('#egggif').fadeIn(500, function() {
-        window.setTimeout(function() { jQuery('#egggif').hide(); }, 5000);
-      });
-    }, "konami-code");
-    egg.addHook(function(){
-      console.log("Hook called for: " + this.activeEgg.keys);
-      console.log(this.activeEgg.metadata);
-    });
-    egg.listen();
-  
-</script> 
+      
 	    <meta charset="utf-8">
         <title>LEAF TOKEN on Cardano</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -628,10 +614,26 @@
         <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/isotope/isotope.pkgd.min.js"></script>
         <script src="lib/lightbox/js/lightbox.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/egg.js/1.0/egg.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/egg.js/1.0/egg.min.js"></script>
 
         
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+	    
+	 <script>
+
+    var egg = new Egg();
+    egg.addCode("up,up,down,down,left,right,left,right,b,a", function() {
+      jQuery('#egggif').fadeIn(500, function() {
+        window.setTimeout(function() { jQuery('#egggif').hide(); }, 5000);
+      });
+    }, "konami-code");
+    egg.addHook(function(){
+      console.log("Hook called for: " + this.activeEgg.keys);
+      console.log(this.activeEgg.metadata);
+    });
+    egg.listen();
+  
+</script>     
     </body>
 </html>
