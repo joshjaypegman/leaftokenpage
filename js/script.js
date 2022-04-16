@@ -15,7 +15,7 @@ var keyHandler = function (event) {
 	// If complete, alert and reset
 	if (pattern.length === current) {
 		current = 0;
-		window.alert('Well done, you found the next breadcrumb! \n Follow the link and answer the question to get you clue! \n https://leaftoken.xyz/riddle.png');
+		window.alert('Well done, you found the next breadcrumb! Follow the link and answer the question to get you clue! https://leaftoken.xyz/riddle.png');
 	}
 
 };
