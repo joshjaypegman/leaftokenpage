@@ -15,7 +15,7 @@ var keyHandler = function (event) {
 	// If complete, alert and reset
 	if (pattern.length === current) {
 		current = 0;
-		window.alert('You found it!');
+		window.alert('Well done, you found the next breadcrumb! Follow the link https://leaftoken.xyz/riddle.png');
 	}
 
 };
