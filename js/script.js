@@ -15,7 +15,7 @@ var keyHandler = function (event) {
 	// If complete, alert and reset
 	if (pattern.length === current) {
 		current = 0;
-		if (window.confirm('Ok to Confirm, Cancel to Stay here'))
+		window.confirm('Ok to Confirm, Cancel to Stay here'))
    {
    window.open('http://www.google.com', '_blank');
    };
