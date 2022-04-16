@@ -619,21 +619,7 @@
         
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
-	    
-	 <script>
-
-    var egg = new Egg();
-    egg.addCode("up,up,down,down,left,right,left,right,b,a", function() {
-      jQuery('#egggif').fadeIn(500, function() {
-        window.setTimeout(function() { jQuery('#egggif').hide(); }, 5000);
-      });
-    }, "konami-code");
-    egg.addHook(function(){
-      console.log("Hook called for: " + this.activeEgg.keys);
-      console.log(this.activeEgg.metadata);
-    });
-    egg.listen();
-  
-</script>     
+	<script src="js/script.js"></script>    
+	
     </body>
 </html>
