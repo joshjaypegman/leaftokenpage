@@ -15,7 +15,7 @@ var keyHandler = function (event) {
 	// If complete, alert and reset
 	if (pattern.length === current) {
 		current = 0;
-		window.alert('Well done, you found the next breadcrumb! Follow the link and answer the question to get you clue! https://leaftoken.xyz/riddle.png');
+		window.alert('Well done, you found the next breadcrumb! Our VeggieMates has a question for you! Scroll down and find in the left bottom corner the TikTok icon. No, we are not on TikTok xD. Click on it find the answer to the question, the answer will be the hidden word from LEAFTOKEN.');
 	}
 
 };
