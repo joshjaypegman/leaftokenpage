@@ -15,10 +15,10 @@ var keyHandler = function (event) {
 	// If complete, alert and reset
 	if (pattern.length === current) {
 		current = 0;
-		window.confirm('Ok to Confirm, Cancel to Stay here'))
-   {
-   window.open('http://www.google.com', '_blank');
-   };
+		window.alert('Well done, you found the next breadcrumb! \n Follow the link and answer the question to get you clue! \n https://leaftoken.xyz/riddle.png');
+	}
+
+};
 		
 
 // Listen for keydown events
